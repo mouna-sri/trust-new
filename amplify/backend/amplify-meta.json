@@ -1,0 +1,33 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-trulive-trulive-803d7-authRole",
+      "UnauthRoleArn": "arn:aws:iam::637423266623:role/amplify-trulive-trulive-803d7-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::637423266623:role/amplify-trulive-trulive-803d7-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-trulive-trulive-803d7-deployment",
+      "UnauthRoleName": "amplify-trulive-trulive-803d7-unauthRole",
+      "StackName": "amplify-trulive-trulive-803d7",
+      "StackId": "arn:aws:cloudformation:ap-south-1:637423266623:stack/amplify-trulive-trulive-803d7/82a1bfc0-5957-11ef-8433-06c9712432ff",
+      "AmplifyAppId": "d2svhfp3gc4th3"
+    }
+  },
+  "api": {
+    "trulive": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
+  }
+}
